@@ -9,7 +9,7 @@ namespace reactnet.Data;
 
 public class  MydbContext : DbContext
 {
-   public MydbContext(DbContextOptions<DbContext> options) : base(options){}
+   public MydbContext(DbContextOptions<MydbContext> options) : base(options){}
 
    public DbSet<Note> Notes {get; set;}
 }
